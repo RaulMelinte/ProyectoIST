@@ -1,0 +1,32 @@
+body > nav {background-color: #EEE;
+	border-top: #AAA 2px solid;
+	border-bottom: #AAA 2px solid;
+	font-size: 20px;
+	margin-bottom: 25px;
+
+}
+body > nav > ul{text-align: center;
+	}
+
+body > nav > ul > li {display:inline;
+	padding: 15px;
+	height: 30px;
+	background-color:
+
+}
+body > nav > ul > li > a {
+	text-decoration: none;
+	color: black;
+}
+
+.estoy{
+	background-color: #AAB;
+	padding: 15px;
+}
+
+body > nav > ul > li > a[href*=".html"]:hover { 
+    background-color: #AAA;
+    padding: 15px;
+}
+
+

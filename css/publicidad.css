@@ -1,0 +1,17 @@
+div.publicidad{;
+position: sticky;
+    top: 0px;
+	}
+
+#derecha{float: right;
+}
+
+#izquierda{float: left;
+}
+
+ #derecha > a > img{
+	width: 50px;
+}
+ #izquierda > a > img {
+	width: 50px;
+}

@@ -1,0 +1,258 @@
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Periodico IST</title>
+		<link rel="icon" type="image/png" href="https://www.etsit.upv.es/media/layout/favicon.PNG" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" type="text/css" href="../css/estilo_gen.css" />
+		<link rel="stylesheet" type="text/css" href="../css/cabecera.css" />
+		<link rel="stylesheet" type="text/css" href="../css/menu_principal.css" />
+		<link rel="stylesheet" type="text/css" href="../css/economia.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	</head>
+	<body>
+		<header>
+			<div>
+			</div>
+			<h1>Periódico IST - Economía
+				<img id="imagenIzquierda" src="../imagenes/logos/logoUPV.png" >
+				<img id="imagenDerecha" src="../imagenes/logos/teleco2.png" >
+			</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a  href="../index.html">Portada</li></a>
+				<li><a  href="./Nacional.html">Nacional</li></a>
+				<li><a  href="./Internacional.html">Internacional</a>
+				<li><a  class = "estoy" href="#">Economia</li></a>
+				<li><a  href="./Ocio.html">Ocio</li></a>
+			</ul>
+			
+		</nav>
+		<audio id="audio" controls>
+			<source type="audio/mpeg" src="../audio/monedas.mp3">
+		</audio>
+
+		<div class="divPrincipal">
+			<div class="tituloEconomia">
+				<div id="izquierda">
+					<img src="../imagenes/economia/mundo.gif" width="auto" height="50">
+				</div>
+				Conversor de monedas
+				<div id="derecha">
+					<img src="../imagenes/economia/mundo.gif" width="auto" height="50">
+				</div>
+
+			</div>
+			<br>
+			<div class = "mainEconomia">
+				<div class = "botones">
+					<input id="cantidadInicial" required value = "1" type="number">
+					<select id="monedaInicial">
+						<option value="THB">Baht tailandés</option>
+						<option value="DKK">Corona danesa</option>
+						<option value="NOK">Corona noruega</option>
+						<option value="SEK">Corona sueca</option>
+						<option value="USD">Dólar americano</option>
+						<option value="AUD">Dólar australiano</option>
+						<option value="CAD">Dólar canadiense</option>
+						<option value="HKD">Dólar de Hong Kong</option>
+						<option value="SGD">Dólar de Singapur</option>
+						<option value="NZD">Dólar neozenlandés</option>
+						<option value="EUR" selected = "selected">Euro</option>
+						<option value="HUF">Forint húngaro</option>
+						<option value="CHF">Franco suizo</option>
+						<option value="CZK">Koruna checa</option>
+						<option value="ISK">Króna islandesa</option>
+						<option value="HRK">Kuna croáta</option>
+						<option value="RON">Leu rumano</option>
+						<option value="BGN">Lev búlgaro</option>
+						<option value="GBP">Libra esterlina</option>
+						<option value="TRY">Lira turca</option>
+						<option value="ILS">Nuevo shéquel israelí</option>
+						<option value="PHP">Peso filipino</option>
+						<option value="MXN">Peso mexicano</option>
+						<option value="BRL">Real brasileño</option>
+						<option value="MYR">Ringgit malayo</option>
+						<option value="RUB">Rublo ruso</option>
+						<option value="INR">Rupia india</option>
+						<option value="IDR">Rupiah indonesia</option>
+						<option value="KRW">Won surcoreano</option>
+						<option value="JPY">Yen Japonés</option>
+						<option value="CNY">Yuan chino</option>
+						<option value="PLN">Zioty polaco</option>
+					</select>
+					<img src="../imagenes/economia/flecha.png">
+					<select id="monedaFinal">
+						<option value="THB">Baht tailandés</option>
+						<option value="DKK">Corona danesa</option>
+						<option value="NOK">Corona noruega</option>
+						<option value="SEK">Corona sueca</option>
+						<option value="USD" selected = "selected">Dólar americano</option>
+						<option value="AUD">Dólar australiano</option>
+						<option value="CAD">Dólar canadiense</option>
+						<option value="HKD">Dólar de Hong Kong</option>
+						<option value="SGD">Dólar de Singapur</option>
+						<option value="NZD">Dólar neozenlandés</option>
+						<option value="EUR">Euro</option>
+						<option value="HUF">Forint húngaro</option>
+						<option value="CHF">Franco suizo</option>
+						<option value="CZK">Koruna checa</option>
+						<option value="ISK">Króna islandesa</option>
+						<option value="HRK">Kuna croáta</option>
+						<option value="RON">Leu rumano</option>
+						<option value="BGN">Lev búlgaro</option>
+						<option value="GBP">Libra esterlina</option>
+						<option value="TRY">Lira turca</option>
+						<option value="ILS">Nuevo shéquel israelí</option>
+						<option value="PHP">Peso filipino</option>
+						<option value="MXN">Peso mexicano</option>
+						<option value="BRL">Real brasileño</option>
+						<option value="MYR">Ringgit malayo</option>
+						<option value="RUB">Rublo ruso</option>
+						<option value="INR">Rupia india</option>
+						<option value="IDR">Rupiah indonesia</option>
+						<option value="KRW">Won surcoreano</option>
+						<option value="JPY">Yen Japonés</option>
+						<option value="CNY">Yuan chino</option>
+						<option value="PLN">Zioty polaco</option>	
+					</select>
+					<button type="button" onclick="Convertir()">Convertir</button>
+				</div>
+				<br>
+				<div class = "segundaLinea" id="segundaLinea">
+					<input type="radio" value="actual" name="elegir" onclick = "handleClick(this);" checked>Usar fecha actual
+					<input type="radio" value="fecha" name="elegir" onclick = "handleClick(this);">Usar otra fecha
+					<br>
+				</div>
+				<br>
+				<div id ="respuesta">
+				</div>
+				<br>
+				<div class="tooltip">
+  					<span class="tooltiptext">No tiene misterio, pon un numerico, elige unas monedas y dale a convertir. Si quieres puedes elegir una fecha para que la conversión se haga con la equivalencia de ese día.</span>
+
+					<img id = "ayuda" src="../imagenes/economia/pregunta.jpg" width="auto" height="50" style="float: left;margin: 5px">
+				</div>
+			</div>
+			<br><br><br>
+		</div>
+		<script>
+			let cantidadInicial;
+			let monedaInicial;
+			let monedaFinal;
+			let url;
+			let factorConversion;
+			let respuesta = document.getElementById("respuesta");
+			let segundaLinea = document.getElementById("segundaLinea");
+			let valorRadio = "actual";																			//Valor del input type radio
+
+			function Convertir(){																				//Funcion ejecutada al pulsar el boton
+				cantidadInicial = document.getElementById("cantidadInicial");
+				if (cantidadInicial.value == ""){																//Asegurarse de introducir cantidad
+					alert("Debes indicar una cantidad");
+				}
+				else{
+					let audio = document.getElementById("audio");
+					let seleccionInicial = document.getElementById("monedaInicial");
+					monedaInicial = seleccionInicial.options[seleccionInicial.selectedIndex].value;				//Valor ISO de la moneda inicial
+					let seleccionFinal = document.getElementById("monedaFinal");
+					monedaFinal = seleccionFinal.options[seleccionFinal.selectedIndex].value;					//Valor ISO de la moneda final
+					audio.play();																				//Sonido de monedas
+					if(monedaInicial == monedaFinal){
+
+						responder(cantidadInicial.value);														//Si son iguales no hay nada que convertir
+
+					}
+					else{
+						if(valorRadio == "fecha"){																//Si hay fecha seleccionada hay que 
+							var fecha = document.getElementById("fecha").value;									//modificar la url para conseguir la
+							url = 'https://ratesapi.io/api/' + fecha;											//cantidad de ese dia
+						}
+						else url = 'https://ratesapi.io/api/latest';											//Si no, se usa la fecha actual
+						url = url +'?base=' + monedaInicial + '&symbols=' + monedaFinal;						//Se construye la url de la api con el 
+																												//nombre de las monedas
+						$.getJSON(url, function(data) { 														//Se recibe el JSON con la respuesta
+		    				//data is the JSON string 															
+		    				//ejemplo {"base":"EUR","date":"2019-02-07","rates":{"USD":1.1345}}					
+		    				factorConversion = data.rates[monedaFinal];											//Del JSON guardamos solamente el factor
+							responder(Math.round(cantidadInicial.value * factorConversion * 100)/100);			//de conversion, multiplicamos y 
+																												//redondeamos
+						});
+					}
+				}
+
+			}
+
+			function responder(cantidad){																		//Funcion que recibe la cantidad final
+				var nexo = " equivale";																			//y contruye un string con el valor ISO
+				var mensaje = "";																				//de las monedas y la fecha de ser 
+				if (valorRadio == "fecha") {																	//necesario
+					mensaje = "A día " + document.getElementById("fecha").value+", ";
+					nexo = " equivalia"
+				}
+
+				respuesta.innerHTML = mensaje + cantidadInicial.value +" "+ monedaInicial + nexo +" a " + cantidad +" "+ monedaFinal;
+				respuesta.style.color= "#0303B6";
+				respuesta.style.fontSize = "40px";
+				respuesta.style.textAlign = "center";
+				respuesta.style.margin = "20px";
+
+			}
+
+			function handleClick(myRadio) {																		//Funcion que comproeuba si los input
+																												//radio tienen seleccionada fecha
+				valorRadio = myRadio.value;
+    			if(valorRadio == "fecha" && document.querySelector('#segundaLinea > input[type="date"]') == null){
+    																											//de ser asi, crean un input date
+    				var nodo = document.createElement("input");													//o borran el existente
+    				nodo.setAttribute("type", "date");
+    				nodo.setAttribute("id", "fecha");
+    				nodo.setAttribute("min", "1999-01-01");
+    				var n =  new Date();
+    				var y = n.getFullYear();
+					var m = n.getMonth() + 1;
+					var d = n.getDate();
+					if(m<10) m = "0"+m;
+					if(d<10) d = "0"+d;
+					var date = y + "-" + m + "-" + d;
+    				nodo.setAttribute("max", date);
+    				nodo.setAttribute("value", date);
+    				nodo.style.border = "6px solid #12c0eb";
+    				nodo.style.margin = "20px";
+    				nodo.style.fontSize = "20px";
+    				segundaLinea.appendChild(nodo);
+    			}
+    			if (valorRadio == "actual" && document.querySelector('#segundaLinea > input[type="date"]') != null){
+    				var element = document.getElementById("fecha");
+    				element.parentNode.removeChild(element);
+    			}
+			}
+
+		</script>
+		<footer>
+			<hr>
+			<details>
+				<summary>
+					Creditos:
+				</summary>
+					<ul>
+
+					<li>Félix Bernal Sánchez <a href="mailto:febersan@teleco.upv.es?cc=daherza@teleco.upv.es?subject=Hola%20David&body=Correo%20de%20salutación">Enviar correo electrónico</a> </li>
+					<li>David Herraíz Zanón <a href="mailto:daherza@teleco.upv.es?cc=febersan@teleco.upv.es?subject=Hola%20Félix&body=Correo%20de%20salutación">Enviar correo electrónico</a> </li>
+					<li>Daniel Olivares Garces.
+					<a href="mailto:daolgar2@teleco.upv.es?cc=raulperis@raulperis.com&subject=Hola%20amigo&body=Correo%20de%20el%20salutacion">
+					Enviar correo electrónico</a></li>
+					<li>Raul Melinte.
+					<a href="mailto:raumetar@teleco.upv.es?cc=raulperis@raulperis.com&subject=Hola%20amigo&body=Correo%20de%20el%20salutacion">
+					Enviar correo electrónico
+					</a></li></ul>
+				
+			</details>
+		</footer>
+	</body>
+
+</html>

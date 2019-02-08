@@ -1,0 +1,107 @@
+/**
+	Especificaciones CSS para el juego del solitario 
+*/
+
+
+
+/* Todos los contadores estarán ubicados en la parte inferior 
+   derecha (position absolute) de los respectivos tapetes (position relative).
+   La fuente determinada es Syncopate que puede encontrarse
+   en Google Fonts (actúese de manera oportuna para que 
+   pueda cargarse) */
+.contador {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	font-family: 'Syncopate', sans-serif;
+}
+
+
+/* Botón de reset centrado y solitario: esta es una posibilidad */;
+button#reset{
+	display:block;
+	margin:auto;
+}
+
+
+/* Centrado del título */
+h1#titulo{ text-align: center; }
+
+
+
+/* Centrado de los marcadores de tiempo y movimientos */
+h2#marcadores{ 
+	text-align: center; 
+    background: rgba(0,0,0,.15);
+    padding: 10px;
+    line-height: 1;
+}
+
+
+/* Mesa que contiene a los tapetes centrados */
+div#mesa{
+	text-align: center;
+	margin:20px;
+
+}
+
+
+/* Todos los tapetes con position relative para que
+   los respectivos mazos (arrays de <img>) puedan
+   posicionarse de manera absoluta respecto a ellos */
+div.tapete{
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+}
+
+
+/* Dimensiones y color de fondo para el tapete inicial */
+div.tapete#inicial{
+	width: 350px;
+	height: 350px;				
+	content: '';
+	border: 2px dotted rgba(0,0,0,.25);
+    border-radius: 5px;
+
+}
+
+/* Dimensiones para todos los tapetes salvo el inicial */
+div.tapete:not(#inicial){				
+	 content: '';
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 155px;
+    border: 2px dotted rgba(0,0,0,.25);
+    border-radius: 5px;
+
+}
+
+/* Color de fondo para el tapete de las cartas sobrantes */
+div.tapete#sobrantes{
+	/*background-color: lightblue;*/
+}
+
+/* Margen de los tapetes superiores (inciial y sobrantes) */
+div.tapetes_superiores{
+	margin-bottom: 20px;
+}
+
+/* Color de fondo de los tapetes receptores */
+div.tapete.receptor{
+	
+}
+
+div#central2 {
+    position: relative;
+    color: #f3f5f7;
+    background: #0e8b44 url(https://bfa.github.io/solitaire-js/img/green_felt.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-top: -15px;
+}
+
+

@@ -1,0 +1,86 @@
+#resumenes{ 
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.fila .dos_tercios{
+	float: left;
+	display: inline-block;
+	vertical-align:0px;
+	margin: 15px 10px 50px 20px;
+	border-top:1px dotted grey;
+	border-bottom:1px dotted grey;
+	width: calc(2*(100% - 60px)/3);
+}
+
+
+.fila .un_tercio{
+	float: right;
+	display: inline-block;
+	vertical-align:10px;
+	margin: 15px 20px 50px 10px;
+	border-top:1px dotted grey;
+	border-bottom:1px dotted grey;
+	padding-bottom: 10px;
+	width: calc((100% - 60px)/3);
+}
+.filaultima .dos_tercios{
+	
+	float: right;
+	display: inline-block;
+	vertical-align:0px;
+	margin: 15px 20px 50px 10px;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	width: calc(2*(100% - 60px)/3);
+}
+.filaultima .un_tercio{
+	float: left;
+	display: inline-block;
+	vertical-align:10px;
+	margin: 15px 20px 50px 10px;
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+	padding-bottom: 10px;
+	width: calc((100% - 60px)/3);
+}
+
+.lugar{
+
+	float:right;
+	background-color:grey;
+	margin-top: -1.25em; 
+}
+.fecha_y_seccion > a{
+	float:right;
+	color:black;
+	background-color:purple;
+	text-decoration: none;
+}
+.fecha_y_seccion > time{
+	float:left;
+	background-color:grey;
+}
+.autor{
+	float:right;
+} 
+.likes_dislikes{
+	clear:both;
+	float:right;
+}
+
+
+
+#imagenparis{
+	width: calc(100%);
+}
+#imagenmalaga {
+	width: calc(100%);
+}
+
+#imagenberlin{
+	width: calc(100%);
+}
+#imagenmadrid {
+	width: calc(100%);
+}

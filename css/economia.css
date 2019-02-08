@@ -1,0 +1,139 @@
+#audio{
+	display: none
+}
+
+.divPrincipal{
+	background-image: url("../imagenes/economia/FondoMundo.jpeg");
+	text-align: center;
+
+}
+
+.tituloEconomia{
+	background-color: white;
+	color: #0303B6;
+	font-size: 50px;
+	text-align: center;
+	margin:0px auto;
+	width: 50%;
+	border: 2px solid #0303B6;
+	display: inline-block;
+	margin-bottom: 100px;
+}
+
+
+.tituloEconomia >  #izquierda{
+	float: left;
+}
+.tituloEconomia >  #derecha{
+	float: right;
+}
+
+.mainEconomia{
+	background-color: white;
+	width: 80%;
+	border: 2px solid #0303B6;
+	margin: 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+.botones{
+	margin: 20px;
+	display: inline-block;
+	margin-right: 0px;
+}
+
+#cantidadInicial{
+	font-size: 20px;
+	border: 6px solid #12c0eb;
+}
+body > div > div.mainEconomia > div.botones > img{
+	height: 75px;
+	width: auto;
+}
+
+#monedaInicial{
+	font-size: 20px;
+	border-radius: 66px 66px 66px 66px;
+	-moz-border-radius: 66px 66px 66px 66px;
+	-webkit-border-radius: 66px 66px 66px 66px;
+	border: 6px dashed #070f3d;
+	background-color: #c8e6eb;
+	margin: 20px;
+}
+
+ select{
+	font-size: 20px;
+	border-radius: 66px 66px 66px 66px;
+	-moz-border-radius: 66px 66px 66px 66px;
+	-webkit-border-radius: 66px 66px 66px 66px;
+	border: 6px dashed #070f3d;
+	background-color: #c8e6eb;
+	margin: 20px;
+}
+
+body > div > div.mainEconomia > div > button{
+	margin: 20px;
+	font-size: 20px;
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	border: 6px solid #12c0eb;
+	background-color: #07184d;
+	color: white;
+}
+
+body > div > div.mainEconomia > div.segundaLinea{
+	float:right;
+	margin: 20px;
+	margin-right: 50px;
+	color: #0303B6;
+	font-size: 20px;
+}
+
+
+/* Tooltip container */
+.tooltip {
+  float: left;
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  background-color: #07184d;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+body > header > div {background-image: url("../imagenes/logos/upv2.jpg");
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: -20px;
+}
+body > header > h1 {background-color: #e3e1ec;
+	text-align: center;
+	line-height: 300%;
+	font-family: 'Orbitron', sans-serif;
+	height: 100px;
+	margin-bottom: 0px;
+
+}
+
+#imagenDerecha {float: right;
+	height: 80px;
+	margin-top: 10px;
+}
+#imagenIzquierda {float: left;
+	height: 100px;
+}
